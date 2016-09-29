@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<style>
+	body{
+  background-color:#fff;
+  
+  
+}
+
+.box-one{
+  
+  max-width:400px;
+  height:300px;
+  border: 1px solid #9b59b6;
+  margin:0 auto;
+  margin-top:100px;
+}
+
+form{
+  margin-top:30px;
+  
+}
+
+#display{
+  text-align:center;
+  margin-top:200px;
+  color:#9b59b6;
+  font-size:60px;
+}
+
+.button-container{
+  width:200px;
+  margin:0 auto;
+  text-align:center;
+}
+
+#button-one{
+  width:200px;
+  height:40px;
+  margin:0 auto;
+  border: 3px solid #fff;
+  color:#fff;
+  background:#9b59b6;
+  
+}
+
+#button-one:focus{
+  background:#9b59b6;
+}
+
+#button-one:active{
+  background:#2ecc71;
+}
+</style>
+
+
+
+   <div class - "box-one">
+     <p id = "display">What is red, mushy and found between shark's teeth ?</p>
+     <div class = "button-container">
+       <button value = "click me" id = "button-one">
+         Click Me
+       </button>
+       
+     </div>
+  </div>
+  
+ <script>
+	 document.getElementById("button-one").onclick = function () { 
+  
+  var text = document.getElementById("display").innerHTML;
+  
+  if (text == "What is red, mushy and found between shark's teeth ?"){
+      document.getElementById("display").innerHTML = "Slow Swimmmers"
+  }
+  else{
+    document.getElementById("display").innerHTML = "What is red, mushy and found between shark's teeth ?";
+  }
+  
+};
+</script> 
+  
+</body>
+</html>
